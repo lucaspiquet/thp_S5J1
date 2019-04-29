@@ -13,3 +13,30 @@
  *= require_tree .
  *= require_self
  */
+
+body
+{
+	padding: 30px;
+}
+
+footer 
+{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top:30px;
+  padding-bottom: 30px;
+}
+
+span[class*="element"]
+{
+font-family: arial, sans-serif;
+font-size: 13px;
+padding: 15px;
+}
