@@ -5,7 +5,7 @@ Projet réalisé par Vincent Guégan et Lucas Piquet
 
 # Les étapes à suivre :
 
-$ git clone https://github.com/forkhembo/the_gossip_project_rails.git / 
+$ git clone 
 $ cd thp_S5J1 / 
 $ bundle install / 
 $ rails db:create / 
