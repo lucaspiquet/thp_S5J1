@@ -1,5 +1,5 @@
 class Gossip < ApplicationRecord
-    belongs_to :user, required: false
-    belongs_to :tag_gossip, required: false
-    has_many :tags, through: :tag_gossips
+  belongs_to :user
+  has_many :join_tags_gossips
+  has_many :tags, through: :join_tags_gossips
 end

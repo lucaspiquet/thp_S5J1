@@ -1,0 +1,18 @@
+<body>
+	
+	</br></br>
+	<h1>Bienvenue à toi, <%= @user_name ? @user_name : "... mais qui es-tu ?" %></h1>
+	
+	<p>Ici c'est notre super site de potins !</p>
+
+	<% if @user_name %>
+		<p>Ravi de t'avoir parmi nous !</p>
+	<% else %>
+		<p>Pour accéder à ta propre page super personnalisée, il te suffit d'indiquer 
+		ton prénom dans l'URL après "/welcome"<br>
+		Exemple : je m'appelle Didier, je rajoute "/didier" à la fin de l'URL - et le tour est joué !</p>
+	<% end %>
+
+</body>
+
+
