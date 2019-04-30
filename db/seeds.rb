@@ -13,6 +13,28 @@ Gossip.destroy_all
 Tag.destroy_all
 User.destroy_all
 City.destroy_all
+puts "Toutes les tables ont été vidées"
+#Fill cities
+puts __LINE__
+10.times do
+  City.create!(name: Faker::Address.unique.city, zipcode: Faker::Address.unique.zip_code)
+end
+puts __LINE__
+
+#Fill users
+puts __LINE__
+10.times do
+  User.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, age: rand(12..50), email: Faker::Internet.email, city_id: City.all.sample.id)
+end
+puts __LINE__
+
+
+#fill tags
+puts __LINE__
+10.times do
+  Tag.create!(title: Faker::Verb.simple_present)
+end
+puts __LINE__
 
 #Fill gossips
 gossips_array = [
